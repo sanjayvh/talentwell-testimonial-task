@@ -24,7 +24,7 @@ const editTestimonial = async (id, itemsToBeEdited) => {
     return testimonial;
 };
 
-const deleteTestimonial = async (id, data) => {
+const deleteTestimonial = async (id) => {
     /* For updating active status */
     const deactivatedTestimonial = await Testimonial.update(
         {
