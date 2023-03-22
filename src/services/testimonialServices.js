@@ -44,8 +44,8 @@ const modifyTestimonial = async (params, payload) => {
     };
 };
 
-const removeTestimonial = async (params, payload) => {
-    const deactivatedTestimonialResult = await Testimonial.deleteTestimonial(params.id, payload);
+const removeTestimonial = async (params) => {
+    const deactivatedTestimonialResult = await Testimonial.deleteTestimonial(params.id);
 
     if (!deactivatedTestimonialResult[0]) {
         return {
